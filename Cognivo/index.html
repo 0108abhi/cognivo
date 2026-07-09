@@ -1831,7 +1831,7 @@ sections.forEach(s=>sio2.observe(s));
   _support['ui']['enableKb'] = 'true';
   _support['ui']['mailbox'] = '85182027';
   _support['ui']['styles'] = {
-    widgetColor: 'rgba(16, 162, 197, 1)',
+    widgetColor: '#0a1e23',
     gradient: true,
   };
   _support['ui']['shoutboxFacesMode'] = '';
@@ -1843,11 +1843,14 @@ sections.forEach(s=>sio2.observe(s));
       mode: "notification",
       delay: 3,
       duration: 30,
-      primary: '',
+      primary: 'Hi',
+      secondary: '',
       sound: true,
     },
     position: 'bottom-right'
   };
+  _support['ui']['overrides'] = _support['ui']['overrides'] || {};
+  _support['ui']['overrides']['confirmationMessage'] = '';
   _support['apps'] = {
     recentConversations: {},
     faq: {"enabled":true}
